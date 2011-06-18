@@ -188,13 +188,14 @@ a:visited {
 /* ******************* *
  * 4. Figures & Images *
  * ******************* */
-
 figure {
-	/* same as wp-caption default from WordPress codex */
-	background-color: #f3f3f3;
 	text-align: center;
-	padding-top: 4px;
-	margin: 1px;
+}
+
+figure img {
+	background-color: #f3f3f3;
+	padding: 4px;
+	margin: 5px;
 	border: 1px solid #ccc;
 		-moz-border-radius: 3px;
 		-khtml-border-radius: 3px;
@@ -206,6 +207,7 @@ figcaption {
 	font-size: 85%; /* approx 11px at standard font size */
 	padding: 0 4px 5px;
 	margin: 0;
+	text-align: center;
  }
 
 /* ************** *
@@ -244,4 +246,3 @@ caption {
 	margin-bottom:.5em;
 	font-style: italic; 
 }
-
