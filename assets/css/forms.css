@@ -1,0 +1,195 @@
+/* ************** *
+ * 5. Forms       *
+ * ************** */
+
+/* form styles inspired (heavily) by MIT licenced http://www.getskeleton.com/
+	- tidied up a few bits
+	- used % for font-sizes
+	- used ems for margins, padding
+	- changed a few colours to pass AAA in WCAG 2
+*/
+
+fieldset, div {
+	border: 0;
+}
+
+input[type='text'], 
+input[type='search'], 
+input[type='tel'], 
+input[type='url'], 
+input[type='email'], 
+input[type='password'], 
+input[type='number'], 
+input[type^='date'], 
+input[type='month'], 
+input[type='week'], 
+input[type='time'], 
+textarea, 
+select {
+	color: #555;
+	background: #fff; 
+	margin: 0;
+	padding: .5em .25em;
+
+	outline: none;
+	border: 1px solid #999;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+
+	width: 280px;
+	max-width: 100%;
+	display: block;
+}
+
+
+input.error, 
+textarea.error, 
+select.error {
+	border-color: #900;
+}
+
+
+select { 
+	padding: 0; 
+}
+
+input[type='text']:focus, 
+input[type='search']:focus, 
+input[type='tel']:focus, 
+input[type='url']:focus, 
+input[type='email']:focus, 
+input[type='password']:focus, 
+input[type='number']:focus, 
+input[type^='date']:focus, 
+input[type='month']:focus, 
+input[type='week']:focus, 
+input[type='time']:focus, 
+textarea:focus {
+	color: #000;
+	background: #FFF2CC;
+	border: 1px solid #666;
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
+	box-shadow:  0 0 3px rgba(0,0,0,.2); 
+}
+
+textarea {
+	min-height: 8em;
+}
+
+label, legend { 
+	display: block;
+	font-weight: bold;
+}
+
+fieldset label{
+	display: inline;
+	font-weight: normal;
+}
+
+form span.error {
+	color: #900;
+}
+
+
+label,
+select,
+input[type='radio'],
+input[type='checkbox'],
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button, .button { 
+	cursor : pointer; 
+}
+
+input[type='submit'],
+input[type='reset'],
+input[type='button'],
+button, a.button {
+	color: #333;
+
+	background-color: #eee;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #ffffff, #cccccc); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient(top, #ffffff, #cccccc); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, #ffffff, #cccccc); /* IE10 */
+	background-image:      -o-linear-gradient(top, #ffffff, #cccccc); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, #ffffff, #cccccc);
+	         filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#cccccc'); /* IE6–IE9 */
+
+	border: 1px solid;
+	border-color: #ccc #aaa #aaa #ccc;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+
+	font-size: 85%;
+	font-weight: bold;
+	text-decoration: none;
+	text-shadow: 0 1px #fff;
+	line-height: 2em;
+
+
+	padding: .4em 1em;
+	display: inline-block;
+
+	cursor: pointer;
+}
+
+.lte7 input[type='submit'],
+.lte7 input[type='reset'],
+.lte7 input[type='button'],
+.lte7 button, .lte7 a.button,
+
+.lte7m input[type='submit'],
+.lte7m input[type='reset'],
+.lte7m input[type='button'],
+.lte7m button, .lte7m a.button {
+	display: inline;
+	zoom: 1;
+}
+
+input[type='submit']:hover,
+input[type='reset']:hover,
+input[type='button']:hover,
+button:hover, a.button:hover,
+
+input[type='submit']:focus,
+input[type='reset']:focus,
+input[type='button']:focus,
+button:focus, a.button:focus
+ {
+	color: #000;
+	background-color: #eee;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#b2b2b2)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #ffffff, #b2b2b2); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient(top, #ffffff, #b2b2b2); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, #ffffff, #b2b2b2); /* IE10 */
+	background-image:      -o-linear-gradient(top, #ffffff, #b2b2b2); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, #ffffff, #b2b2b2);
+	         filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#ffffff', EndColorStr='#b2b2b2'); /* IE6–IE9 */
+
+
+	border-color: #aaa #888 #888 #aaa;
+}
+
+
+input[type='submit']:active,
+input[type='reset']:active,
+input[type='button']:active,
+button:active, a.button:active {
+
+	background-color: #eee;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#b2b2b2), to(#ffffff)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #b2b2b2, #ffffff); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient(top, #b2b2b2, #ffffff); /* FF3.6 */
+	background-image:     -ms-linear-gradient(top, #b2b2b2, #ffffff); /* IE10 */
+	background-image:      -o-linear-gradient(top, #b2b2b2, #ffffff); /* Opera 11.10+ */
+	background-image:         linear-gradient(top, #b2b2b2, #ffffff);
+	          filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#b2b2b2', EndColorStr='#ffffff'); /* IE6–IE9 */
+
+	border-color: #888 #aaa #aaa #888;
+}
+

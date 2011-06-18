@@ -1,0 +1,247 @@
+/* 
+
+1. Fonts
+2. Resetish
+3. Base
+4. Figures & Images
+5. Forms
+6. Tables
+
+
+
+*/
+
+
+
+/* ************** *
+ * 1. Fonts       *
+ * ************** */
+
+/*!
+Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.com/yui/license.html
+version: 3.3.0
+build: 3167
+*/
+/**
+ * Percents could work for IE, but for backCompat purposes, we are using keywords.
+ * x-small is for IE6/7 quirks mode.
+ */
+body {
+	font:13px/1.5 arial,helvetica,clean,sans-serif;
+	*font-size:small; /* for IE */
+	*font:x-small; /* for IE in quirks mode */
+}
+
+/**
+ * Nudge down to get to 13px equivalent for these form elements
+ */ 
+select,
+input,
+button,
+textarea {
+	font:99% arial,helvetica,clean,sans-serif;
+}
+
+/**
+ * To help tables remember to inherit
+ */
+table {
+	font-size:inherit;
+	font:100%;
+}
+
+/**
+ * Bump up IE to get to 13px equivalent for these fixed-width elements
+ */
+pre,
+code,
+kbd,
+samp,
+tt {
+	font-family:monospace;
+	*font-size:108%;
+	line-height:100%;
+}
+
+/*! END BSD licensed Yahoo! code */
+
+
+/* ************** *
+ * 2. Resetish    *
+ * ************** */
+
+html, body,
+div, address,
+figure img,
+figure object,
+figure embed
+ {
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,
+p, ol, ul, dl, 
+blockquote, pre,
+table,
+form fieldset.set, form div.set
+ {
+	margin: 1em 0 0;
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+abbr[title], 
+acronym[title],
+dfn[title] { 
+	border-bottom : 1px dotted; 
+	cursor : help; 
+}
+
+/* html5 block elements */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	margin: 0;
+	padding: 0;
+	display : block;
+}
+
+/* ************** *
+ * 3. Base        *
+ * ************** */
+
+
+/* 3a. Headings */
+h1,h2,h3,h4,h5,h6 {
+	page-break-after: avoid;
+}
+
+h1 {
+	font-size:138.5%; /* 18px */
+}
+
+h2 {
+	font-size:123.1%; /* 16px */
+}
+
+h3 {
+	font-size:108%;  /* 14px */
+}
+
+h4,h5,h6 {
+	font-size: 100%; /* 13px */
+}
+
+/* 3b.Typography */
+
+/* p - see 2.*/
+
+ul, ol, dl {
+	margin-left: 1em;
+	padding-left: 1em;
+}
+
+	li ul, li ul, li dl {
+		/* nested lists don't need top, margins */
+		margin-top: 1em;
+	}
+	
+dd, blockquote {
+	margin-left: 1em;
+}
+
+address {
+	font-style: italic;
+}
+
+/* 3c. Links */
+
+a,
+a:link,
+a:visited {
+	color: #1670a4;
+	background: transparent;
+	text-decoration: underline;
+	
+	/* double ups required as multiple psuedo classes can apply at once */
+}
+
+	a:focus {
+		color: #fff;
+		background: #1670a4; 
+		text-decoration: none;
+	}
+
+	a:hover,
+	a:active {
+		color: #1670a4; 
+		background: transparent;
+		text-decoration: none;
+	}
+
+
+/* ******************* *
+ * 4. Figures & Images *
+ * ******************* */
+
+figure {
+	/* same as wp-caption default from WordPress codex */
+	background-color: #f3f3f3;
+	text-align: center;
+	padding-top: 4px;
+	margin: 1px;
+	border: 1px solid #ccc;
+		-moz-border-radius: 3px;
+		-khtml-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+}
+
+figcaption {
+	font-size: 85%; /* approx 11px at standard font size */
+	padding: 0 4px 5px;
+	margin: 0;
+ }
+
+/* ************** *
+ * 5. Forms       *
+ * ************** */
+
+/* see forms.css */
+
+/* ************** *
+ * 6. Tables      *
+ * ************** */
+
+table {
+	border-collapse:collapse;
+	border-spacing:0;
+}
+
+th,td {
+	border:1px solid #000;
+	padding:.5em;
+	vertical-align: top;
+}
+th {
+	/*distinguishing table headers from data cells*/
+	font-weight:bold;
+	text-align:left;
+}
+
+	thead th {
+		text-align: center;
+		vertical-align: bottom;
+	}
+
+caption {
+	/*coordinated margin to match cell's padding*/
+	margin-bottom:.5em;
+	font-style: italic; 
+}
+
