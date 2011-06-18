@@ -67,7 +67,7 @@ input[type='week']:focus,
 input[type='time']:focus, 
 textarea:focus {
 	color: #000;
-	background: #FFF2CC;
+	background: #fec;
 	border-color: #666;
 	-moz-box-shadow: 0 0 3px rgba(0,0,0,.2);
 	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.2);
