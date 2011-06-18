@@ -134,19 +134,9 @@ button, a.button {
 
 	padding: .4em 1em;
 	display: inline-block;
-}
 
-.lte7 input[type='submit'],
-.lte7 input[type='reset'],
-.lte7 input[type='button'],
-.lte7 button, .lte7 a.button,
-
-.lte7m input[type='submit'],
-.lte7m input[type='reset'],
-.lte7m input[type='button'],
-.lte7m button, .lte7m a.button {
-	display: inline;
-	zoom: 1;
+	*display: inline;
+	*zoom: 1;
 }
 
 input[type='submit']:hover,
@@ -190,4 +180,3 @@ button:active, a.button:active {
 
 	border-color: #888 #aaa #aaa #888;
 }
-
