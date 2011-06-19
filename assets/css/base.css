@@ -95,6 +95,11 @@ form fieldset.set, form div.set
 
 img {
 	border: 0;
+	-ms-interpolation-mode: bicubic;
+	/* needed for responsive designs */
+	width: auto !important;
+	height: auto !important;
+	max-width: 100%;
 }
 
 abbr[title], 
@@ -159,6 +164,27 @@ dd, blockquote {
 address {
 	font-style: italic;
 }
+
+
+small, sup, sup {
+    font-size: 75%;
+}
+
+sub,
+sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
 
 /* 3c. Links */
 

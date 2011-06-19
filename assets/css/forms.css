@@ -54,6 +54,16 @@ select {
 	padding: 0; 
 }
 
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
 input[type='text']:focus, 
 input[type='search']:focus, 
 input[type='tel']:focus, 
@@ -81,6 +91,10 @@ textarea {
 label, legend { 
 	display: block;
 	font-weight: bold;
+}
+
+legend {
+    *margin-left: -7px;
 }
 
 fieldset label{
