@@ -74,11 +74,16 @@ tt {
  * ************** */
 
 html, body,
-div, address,
+div, address
+ {
+	/* need to consider seperating html5 elements for [lte ie8] w/o JavaScript */
+	margin: 0;
+	padding: 0;
+}
+
 figure img,
 figure object,
-figure embed
- {
+figure embed {
 	margin: 0;
 	padding: 0;
 }
