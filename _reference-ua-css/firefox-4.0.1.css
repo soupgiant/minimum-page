@@ -286,7 +286,7 @@ table[align="right"] {
      in what authors should expect */
 
   /* Put this first so 'border' and 'frame' rules can override it. */
-table[rules] { 
+table[rules] {
   border-width: thin;
   border-style: hidden;
 }
@@ -298,7 +298,7 @@ table[rules] {
   /* :-moz-table-border-nonzero is like [border]:not([border="0"]) except it
      also checks for other zero-like values according to HTML attribute
      parsing rules */
-table:-moz-table-border-nonzero { 
+table:-moz-table-border-nonzero {
   border-width: thin;
   border-style: outset;
 }
@@ -318,7 +318,7 @@ table[frame="vsides"] { border-style: hidden outset; }
 table[frame="box"],
 table[frame="border"] { border-style: outset; }
 
- 
+
 /* Internal Table Borders */
 
   /* 'border' cell borders first */
@@ -339,7 +339,7 @@ table[rules]:not([rules="none"]):not([rules=""]) {
   border-collapse: collapse;
 }
 
-/* only specified rules override 'border' settings  
+/* only specified rules override 'border' settings
   (increased specificity to achieve this) */
 table[rules]:not([rules=""])> tr > td,
 table[rules]:not([rules=""])> * > tr > td,
@@ -369,7 +369,7 @@ table[rules][rules="all"] > * > tr > td,
 table[rules][rules="all"] > tr > th,
 table[rules][rules="all"] > * > tr > th,
 table[rules][rules="all"] > td,
-table[rules][rules="all"] > th 
+table[rules][rules="all"] > th
 {
   border-width: thin;
   border-style: solid;
@@ -408,9 +408,9 @@ table[rules][rules="groups"] > tbody {
   border-top-style: solid;
   border-bottom-style: solid;
 }
-  
-  
-/* caption inherits from table not table-outer */  
+
+
+/* caption inherits from table not table-outer */
 caption {
   display: table-caption;
   text-align: center;
@@ -463,10 +463,10 @@ table > tr {
   vertical-align: middle;
 }
 
-td { 
+td {
   display: table-cell;
   vertical-align: inherit;
-  text-align: inherit; 
+  text-align: inherit;
   padding: 1px;
 }
 
@@ -718,7 +718,7 @@ pre:-moz-focusring, q:-moz-focusring, s:-moz-focusring, samp:-moz-focusring,
 small:-moz-focusring, span:-moz-focusring, strike:-moz-focusring,
 strong:-moz-focusring, sub:-moz-focusring, sup:-moz-focusring,
 table:-moz-focusring, tbody:-moz-focusring, td:-moz-focusring,
-tfoot:-moz-focusring, th:-moz-focusring, thead:-moz-focusring, 
+tfoot:-moz-focusring, th:-moz-focusring, thead:-moz-focusring,
 tr:-moz-focusring, tt:-moz-focusring, u:-moz-focusring,
 ul:-moz-focusring, var:-moz-focusring {
   /* Don't specify the outline-color, we should always use initial value. */
