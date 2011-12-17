@@ -1,4 +1,4 @@
-/* 
+/*
 
 1. Fonts
 2. Resetish
@@ -36,7 +36,7 @@ body {
 
 /**
  * Nudge down to get to 13px equivalent for these form elements
- */ 
+ */
 select,
 input,
 button,
@@ -65,7 +65,7 @@ tt {
 	line-height:100%;
 }
 
-/*! END BSD licensed Yahoo! code 
+/*! END BSD licensed Yahoo! code
 /*!
 Copyright (c) 2011, Soupgiant
 All rights reserved.
@@ -115,7 +115,7 @@ figure embed {
 }
 
 h1,h2,h3,h4,h5,h6,
-p, ol, ul, dl, 
+p, ol, ul, dl,
 blockquote, pre,
 table,
 form fieldset.set, form div.set
@@ -133,15 +133,15 @@ img {
 	max-width: 100%;
 }
 
-abbr[title], 
+abbr[title],
 acronym[title],
-dfn[title] { 
-	border-bottom : 1px dotted; 
-	cursor : help; 
+dfn[title] {
+	border-bottom : 1px dotted;
+	cursor : help;
 }
 
 /* html5 block elements */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	margin: 0;
 	padding: 0;
@@ -162,7 +162,7 @@ h1,h2,h3,h4,h5,h6 {
 	hgroup *:nth-child(n+2) {
 		margin-top:0
 	}
-	
+
 
 h1 {
 	font-size:138.5%; /* 18px */
@@ -193,7 +193,7 @@ ul, ol, dl {
 		/* nested lists don't need top, margins */
 		margin-top: 0;
 	}
-	
+
 dd, blockquote {
 	margin-left: 1em;
 }
@@ -236,19 +236,19 @@ a:visited {
 	color: #1670a4;
 	background: transparent;
 	text-decoration: underline;
-	
+
 	/* double ups required as multiple psuedo classes can apply at once */
 }
 
 	a:focus {
 		color: #fff;
-		background: #1670a4; 
+		background: #1670a4;
 		text-decoration: none;
 	}
 
 	a:hover,
 	a:active {
-		color: #1670a4; 
+		color: #1670a4;
 		background: transparent;
 		text-decoration: none;
 	}
@@ -313,5 +313,5 @@ th {
 caption {
 	/*coordinated margin to match cell's padding*/
 	margin-bottom:.5em;
-	font-style: italic; 
+	font-style: italic;
 }

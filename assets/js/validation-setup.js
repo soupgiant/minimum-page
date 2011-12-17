@@ -3,16 +3,16 @@ function setupValidation($forms) {
 		return;
 	}
 	//make sure $forms is indeed a jQuery object & not just a selector
-	
+
 	$forms = $($forms);
-	
+
 	$forms.each(function(){
 		var $form = $(this);
-		
+
 		function placeError($error, $element){
-			var placeTag = 'label', 
+			var placeTag = 'label',
 				$place;
-				
+
 			if ( $element.is('input[type=radio],input[type=checkbox]') ) {
 				placeTag = 'legend';
 			}
@@ -22,9 +22,9 @@ function setupValidation($forms) {
 
 			$error.appendTo($place);
 		}
-		
-		
-		/*	revisite settings once a new version of jQuery Validate 
+
+
+		/*	revisite settings once a new version of jQuery Validate
 			to take into account html5 form types
 		*/
 		$form.validate({
@@ -35,11 +35,11 @@ function setupValidation($forms) {
             onfocusin: false,
             onfocusout: false,
             onclick: false,
-			
+
 			errorElement: "span",
 			errorPlacement: placeError
 		});
-		
+
 	});
 }
 

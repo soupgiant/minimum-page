@@ -61,8 +61,8 @@ bdo[dir] {
  * inherited value) to the transformed element." */
 
 address, blockquote, body, caption, center, col, colgroup, dd, dir, div, dl, dt,
-fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, isindex, li, listing, map, 
-marquee, menu, noframes, ol, p, plaintext, pre, table, tbody, td, tfoot, th, 
+fieldset, form, h1, h2, h3, h4, h5, h6, hr, html, isindex, li, listing, map,
+marquee, menu, noframes, ol, p, plaintext, pre, table, tbody, td, tfoot, th,
 thead, tr, ul, xmp {
   unicode-bidi: embed;
 }
@@ -202,8 +202,8 @@ table[align="right"] {
 table[rules]:not([rules="none"]) {
   border-collapse: collapse;
 }
-   
-/* caption inherits from table not table-outer */  
+
+/* caption inherits from table not table-outer */
 caption {
   display: table-caption;
   text-align: center;
@@ -256,10 +256,10 @@ table > tr {
   vertical-align: middle;
 }
 
-td { 
+td {
   display: table-cell;
   vertical-align: inherit;
-  text-align: inherit; 
+  text-align: inherit;
   padding: 1px;
 }
 
@@ -488,11 +488,11 @@ base:focus, big:focus, blockquote:focus, br:focus, canvas:focus, caption:focus,
 center:focus, cite:focus, code:focus, col:focus, colgroup:focus, dd:focus,
 del:focus, dfn:focus, dir:focus, div:focus, dl:focus, dt:focus, em:focus,
 fieldset:focus, font:focus, form:focus, h1:focus, h2:focus, h3:focus, h4:focus,
-h5:focus, h6:focus, hr:focus, i:focus, img:focus, ins:focus, 
-kbd:focus, label:focus, legend:focus, li:focus, link:focus, menu:focus, 
-ol:focus, p:focus, pre:focus, q:focus, s:focus, samp:focus, 
-small:focus, span:focus, strike:focus, strong:focus, sub:focus, sup:focus, 
-table:focus, tbody:focus, td:focus, tfoot:focus, th:focus, thead:focus, 
+h5:focus, h6:focus, hr:focus, i:focus, img:focus, ins:focus,
+kbd:focus, label:focus, legend:focus, li:focus, link:focus, menu:focus,
+ol:focus, p:focus, pre:focus, q:focus, s:focus, samp:focus,
+small:focus, span:focus, strike:focus, strong:focus, sub:focus, sup:focus,
+table:focus, tbody:focus, td:focus, tfoot:focus, th:focus, thead:focus,
 tr:focus, tt:focus, u:focus, ul:focus, var:focus {
   /* Don't specify the outline-color, we should always use initial value. */
    outline: 1px dotted;
