@@ -1,236 +1,240 @@
 <!DOCTYPE html>
-<html class="no-js">
-<head>
-	<script>(function(H){H.className=H.className.replace(/\bno-js\b/,'js')})(document.documentElement)</script>
-	<title>Minimum Page Style Checker</title>
-	<link rel="stylesheet" href="assets/css/base.css" type="text/css">
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Min Page LESS.CSS</title>
+        <!-- <link rel="stylesheet" href="css/base.css"> -->
+		<link rel="stylesheet" href="assets/css/base.css" type="text/css">
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	 <!-- <script src="js/less-1.1.3.min.js" type="text/javascript" charset="utf-8"></script> -->
+        <!-- style>
+            #boxsize button,
+            #boxsize input,
+            #boxsize select,
+            #boxsize textarea {
+                width: 200px;
+                padding: 5px;
+                border: 1px solid #333;
+            }
+        </style -->
+    </head>
+    <body>
+        <header>
+            <hgroup>
+                <h1>Grouped Heading 1</h1>
+                <h2>Grouped Heading 2</h2>
+            </hgroup>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">navigation item #1</a></li>
+                    <li><a href="#">navigation item #2</a></li>
+                    <li><a href="#">navigation item #3</a></li>
+                </ul>
+            </nav>
+        </header>
 
-	<!--[if lt IE 9]>
-	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
-</head>
-<body>
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
 
-	<p>Test bed mostly nicked from the YUI test bed with a few additions</p>
-	
-	<h1>Heading One</h1>
-	<p>Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit Lorem ipsum dolor sit amet, volutpat. </p> 
-	
-	<h2>Heading Two</h2>
-	<p>Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit Lorem ipsum dolor sit amet, volutpat. </p> 
+        <p hidden>This should be hidden in all browsers, apart from IE6</p>
 
-	<h3>Heading Three</h3>
-	<p>Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit Lorem ipsum dolor sit amet, volutpat. </p> 
-	
-	<h4>Heading Four</h4>
-	<p>Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit Lorem ipsum dolor sit amet, volutpat. </p> 
-	
-	<h5>Heading Five</h5>
-	<p>Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit Lorem ipsum dolor sit amet, volutpat. </p> 
-	
-	<h6>Heading Six</h6>
-	<p>Paragraph: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit Lorem ipsum dolor sit amet, volutpat. </p> 
-	
-	<div>This is a <code>div</code> element. Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. (End of <code>div</code>.)</div> 
-	
-	<blockquote> 
-		<p>This is a block quotation containing a <em>single</em> paragraph. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p></blockquote> 
- 
-	
-	
-<h2><abbr>HTML5</abbr> Block Elemements</h2>
+        <section>
+            <h1>Section Heading 1</h1>
+            <article>
+                <h4>Article Heading 2</h4>
+                <address>Address: somewhere, world</address>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
+            </article>
+        </section>
 
-<article>This is an <code>article</code> element. Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. (End of <code>article</code>.)</article>
+        <h1>Text-level semantics</h1>
 
-<aside>This is an <code>aside</code> element. Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. (End of <code>aside</code>.)</aside>
+        <p>
+        The <a href="#">a element</a> example<br>
+        The <abbr>abbr element</abbr> and <abbr title="Title text">abbr element with title</abbr> examples<br>
+        The <b>b element</b> example<br>
+        The <cite>cite element</cite> example<br>
+        The <code>code element</code> example<br>
+        The <del>del element</del> example<br>
+        The <dfn>dfn element</dfn> and <dfn title="Title text">dfn element with title</dfn> examples<br>
+        The <em>em element</em> example<br>
+        The <i>i element</i> example<br>
+        The img element <img src="http://placekitten.com/16/16" alt=""> example<br>
+        The <ins>ins element</ins> example<br>
+        The <kbd>kbd element</kbd> example<br>
+        The <mark>mark element</mark> example<br>
+        The <q>q element <q>inside</q> a q element</q> example<br>
+        The <s>s element</s> example<br>
+        The <samp>samp element</samp> example<br>
+        The <small>small element</small> example<br>
+        The <span>span element</span> example<br>
+        The <strong>strong element</strong> example<br>
+        The <sub>sub element</sub> example<br>
+        The <sup>sup element</sup> example<br>
+        The <var>var element</var> example<br>
+        The <u>u element</u> example
+        </p>
 
-<details>
-	<summary>This is a <code>details</code> element containing a <code>summary</code> and paragraph.</summary> 
-	<p>Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. (End of <code>details</code>.)</p></details>
+        <h1>Embedded content</h1>
 
-<footer>This is a <code>footer</code> element. Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. (End of <code>footer</code>.)</footer>
+        <h3>audio</h3>
 
-<header>This is a <code>header</code> element. Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. (End of <code>header</code>.)</header>
+        <audio controls></audio>
+        <audio></audio>
 
-<section>This is a <code>section</code> element. Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. (End of <code>section</code>.)</section>
+        <h3>img</h3>
 
-<figure>
-	<img src="assets/img/350x150.gif" width="350" height="150" alt="350x150">
-	<figcaption>This is a <code>figure</code> element containing an image and <code>figcaption</code>.</figcaption> 
-</figure>
+        <img src="http://placekitten.com/100/100" alt="">
+        <a href="#"><img src="http://placekitten.com/100/100" alt=""></a>
 
-<hgroup>
-	<h1>HGroup: h1</h1>
-	<h2>HGroup: h2</h2>
-	<h3>HGroup: h3</h3>
-	<h4>HGroup: h4</h4>
-</hgroup>
+        <h3>svg</h3>
 
+        <svg width="100px" height="100px">
+            <circle cx="100" cy="100" r="100" fill="#ff0000" />
+        </svg>
 
-	
-			<h2>Lists</h2> 
-			<nav><ul>
-				<li>This is an <abbr>html5</abbr> <code>nav</code> element containing a list.</li>
-				<li>Lorem ipsum dolor sit amet, elit, sed diam nonummy nibh euismod </li>
-				<li>tincidunt ut consectetuer adipiscing elit, sed diam nonummy nibh </li>
-				<li>euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </li>
-				<li>(End of <code>nav</code>.)</li>
-			</ul></nav>
+        <h3>video</h3>
 
-			<p>This is a paragraph before an <strong>unnumbered</strong> list (<code>ul</code>). Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p> 
+        <video controls></video>
+        <video></video>
 
-			<ul> 
-			  <li>One.</li> 
-			  <li>Two.</li> 
-			  <li>Three. Well, probably this list item should be longer. Note that for short items lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.</li> 
-			  <li>Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.</li> 
-			</ul> 
+        <h1>Grouping content</h1>
 
-			<p>This is a paragraph before a <strong>numbered</strong> list (<code>ol</code>). Note that the spacing between a paragraph and a list before or after that is hard to tune in a user style sheet. You can't guess which paragraphs are logically related to a list, e.g. as a "list header".</p> 
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et m.</p>
 
-			<ol> 
-			  <li>One.</li> 
-			  <li>Two.</li> 
-			  <li>Three. Well, probably this list item should be longer. Note that if items are short, lists look better if they are compactly presented, whereas for long items, it would be better to have more vertical spacing between items.</li> 
-			  <li>Four. This is the last item in this list. Let us terminate the list now without making any more fuss about it.</li> 
-			  <li>Five</li> 
-			  <li>Six</li> 
-			  <li>Seven</li> 
-			  <li>Eight</li> 
-			  <li>Nine</li> 
-			  <li>Ten</li> 
+        <h3>pre</h3>
 
-			</ol> 
+        <pre>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et me.</pre>
 
-			<p>This is a paragraph before a <strong>definition</strong> list (<code>dl</code>). In principle, such a list should consist of <em>terms</em> and associated definitions. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </p> 
-			<dl> 
-			  <dt>Apple</dt> 
-			  <dd>is a fruit.</dd> 
-			  <dt>Banana</dt> 
-			  <dd>Is also a fruit.</dd> 
-			  <dt>Tomato</dt> 
-			  <dd>Is debatable. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</dd> 
-			</dl> 
+        <pre><code>&lt;html>
+    &lt;head>
+    &lt;/head>
+    &lt;body>
+        &lt;div class="main"> &lt;div>
+    &lt;/body>
+&lt;/html></code></pre>
 
-			<h2>Text-level markup</h2> 
+        <h3>blockquote</h3>
 
+        <blockquote>
+            <p>Some sort of famous witty quote marked up with a &lt;blockquote> and a child &lt;p> element.</p>
+        </blockquote>
 
-			<ul> 
-			  <li> <abbr title="Cascading Style Sheets">CSS</abbr> (an abbreviation;
-			 <code>abbr</code> and <code>title</code> markup used)</li> 
-			  <li> <acronym title="radio detecting and ranging">radar</acronym> (an acronym; <code>acronym</code> and <code>title</code> markup used)</li> 
-			
-			  <li> <abbr>CSS</abbr> (an abbreviation;
-			 <code>abbr</code> markup used without <code>title</code>)</li> 
-			  <li> <acronym>radar</acronym> (an acronym; <code>acronym</code> markup used without <code>title</code>)</li> 
+        <blockquote>Even better philosophical quote marked up with just a &lt;blockquote> element.</blockquote>
 
-			  <li> <cite>Origin of Species</cite> (a book title; <code>cite</code> markup used)</li> 
-			  <li> <code>a[i] = b[i] + c[i);</code> (computer code; <code>code</code> markup used)</li> 
+        <h3>ordered list</h3>
 
-			  <li> an <dfn>octet</dfn> is an entity consisting of eight bits
-			       (<code>dfn</code> markup used for the term being defined)</li> 
-			  <li> this is <em>very</em> simple (<code>em</code> markup used for emphasizing
-			       a word)</li> 
+        <ol>
+            <li>list item 1</li>
+            <li>list item 1
+                <ol>
+                    <li>list item 2</li>
+                    <li>list item 2
+                        <ol>
+                            <li>list item 3</li>
+                            <li>list item 3</li>
+                        </ol>
+                    </li>
+                    <li>list item 2</li>
+                    <li>list item 2</li>
+                </ol>
+            </li>
+            <li>list item 1</li>
+            <li>list item 1</li>
+        </ol>
 
-			  <li> type <kbd>yes</kbd> when prompted for an answer (<code>kbd</code> markup
-			       used for text indicating keyboard input)</li> 
-			  <li> <q>Hello!</q> (<code>q</code> markup used for quotation)</li> 
+        <h3>unordered list</h3>
 
-			  <li> He said: <q>She said <q>Hello!</q></q> (a quotation inside a quotation)</li> 
-			  <li> you may get the message <samp>Core dumped</samp> at times
-			       (<code>samp</code> markup used for sample output)</li> 
+        <ul>
+            <li>list item 1</li>
+            <li>list item 1
+                <ul>
+                    <li>list item 2</li>
+                    <li>list item 2
+                        <ul>
+                            <li>list item 3</li>
+                            <li>list item 3</li>
+                        </ul>
+                    </li>
+                    <li>list item 2</li>
+                    <li>list item 2</li>
+                </ul>
+            </li>
+            <li>list item 1</li>
+            <li>list item 1</li>
+        </ul>
 
-			  <li> <strong>this is highlighted text</strong> (<code>strong</code> markup used)</li> 
+        <h3>description list</h3>
 
-			  <li> <tt>text in monospace font</tt> (<code>tt</code> markup used)</li> 
+        <dl>
+            <dt>Description name</dt>
+            <dd>Description value</dd>
+            <dt>Description name</dt>
+            <dd>Description value</dd>
+            <dd>Description value</dd>
+            <dt>Description name</dt>
+            <dt>Description name</dt>
+            <dd>Description value</dd>
+        </dl>
 
-			  <li> the command <code>cat</code> <var>filename</var> displays the
-			       file specified by the <var>filename</var> (<code>var</code> markup
-			       used to indicate a word as a variable).</li> 
-			  <li> In order to test how subscripts and superscripts (<code>sub</code> and <code>sup</code> markup) work inside running text, we need some dummy text around constructs like x<sub>1</sub> and H<sub>2</sub>O (where subscripts occur). So here is some fill so that you will (hopefully) see whether and how badly the subscripts and superscripts mess up vertical spacing between lines. Now superscripts: M<sup>lle</sup>, 1<sup>st</sup>, and then some mathematical notations: e<sup>x</sup>, sin<sup>2</sup> <i>x</i>, and some nested superscripts (exponents) too: Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. </li> 
+        <h3>figure</h3>
 
-			</ul> 
+        <figure>
+            <img src="http://placekitten.com/400/200" alt="">
+            <figcaption>Figcaption content</figcaption>
+        </figure>
 
-			<p>Some of the elements tested above are typically displayed in a monospace font, often using the <em>same</em> presentation for all of them. This tests whether that is the case on your browser:</p> 
+        <h1>Tabular data</h1>
 
-			<ul> 
-			  <li><code>This is sample text inside code markup</code></li> 
-			  <li><kbd>This is sample text inside kbd markup</kbd></li> 
-			  <li><samp>This is sample text inside samp markup</samp></li> 
+        <table>
+            <caption>Jimi Hendrix - albums</caption>
+            <thead>
+                <tr>
+                    <th>Album</th>
+                    <th>Year</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <th>Album</th>
+                    <th>Year</th>
+                    <th>Price</th>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Are You Experienced</td>
+                    <td>1967</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>Axis: Bold as Love</td>
+                    <td>1967</td>
+                    <td>$12.00</td>
+                </tr>
+                <tr>
+                    <td>Electric Ladyland</td>
+                    <td>1968</td>
+                    <td>$10.00</td>
+                </tr>
+                <tr>
+                    <td>Band of Gypsys</td>
+                    <td>1970</td>
+                    <td>$12.00</td>
+                </tr>
+            </tbody>
+        </table>
 
-			  <li><tt>This is sample text inside tt markup</tt></li> 
-			</ul> 
+        <h1>Forms</h1>
 
-			<h2>Links</h2> 
+<p>See <a href="forms.html">forms</a> demo.</p>
 
-			<ul> 
-				<li><a href="http://minimumpage.com">minimumpage.com</a></li> 
-				<li><a href="https://github.com/soupgiant/minimum-page">minimumpage github repo</a></li> 
-				<li><a href="http://bigredtin.com">Big Red Tin</a></li> 
-				<li><a href="http://soupgiant.com">Soupgiant</a></li>	
-			</ul> 
-
-
-			<h2>Tables</h2> 
-
-			<p>The following table has a caption. The first row and the first column contain table header cells only; other cells are data cells.</p> 
-
-			<table summary="each row names a nordic country and specifies its total area and land area, in square kilometers"> 
-				<caption>Caption: Sample table: Areas of the Nordic countries, in sq km</caption> 
-				<tr> 
-					<th>Country</th> 
-					<th>Total area</th> 
-
-					<th>Land area</th> 
-				</tr> 
-				<tr> 
-					<th>Denmark</th> 
-					<td>43,070</td> 
-					<td>42,370</td> 
-				</tr>	
-				<tr> 
-
-					<th>Finland</th> 
-					<td>337,030</td> 
-					<td>305,470</td> 
-				</tr> 
-				<tr> 
-					<th>Iceland</th> 
-					<td>103,000</td> 
-
-					<td>100,250</td> 
-				</tr> 
-				<tr> 
-					<th>Norway</th> 
-					<td>324,220</td> 
-					<td>307,860</td> 
-				</tr> 
-
-				<tr> 
-					<th>Sweden</th> 
-					<td>449,964</td> 
-					<td>410,928</td> 
-				</tr>	
-			</table> 
-
-			<h2>Forms</h2> 
-
-			<p>See <a href="forms.html">forms.html</a> 
-
-				<h2>Preformatted text</h2> 
-			<p>This next bit shows that PREformatted text is working.</p> 
-
-		<pre> 
-		1
-		 2
-		  3
-		   4
-		    5
-		</pre> 
-
-			<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
-
-	
-	
-</body>
+    </body>
 </html>

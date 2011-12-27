@@ -10,185 +10,75 @@
 
 	<form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" novalidate> 
  
-		<div><input type="hidden" name="hidden field" value="42"></div> 
-		
-		
-		<h2> text fields</h2> 
-		
-		<div class="set"> 
-			<label for="text5">text field</label> 
-			<input type="text" name="text5" 
-				id="text5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="search5">search field</label> 
-			<input type="search" name="search5" 
-				id="search5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="tel5">tel field</label> 
-			<input type="tel" name="tel5" 
-				id="tel5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="url5">url field</label> 
-			<input type="url" name="url5" 
-				id="url5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="email5">email field</label> 
-			<input type="email" name="email5" 
-				id="email5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="password5">password field</label> 
-			<input type="password" name="password5" 
-				id="password5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="number5">number field</label> 
-			<input type="number" name="number5" 
-				id="number5" class="required" required /> 
-		</div> 
- 
-				
-		<div class="set"> 
-			<label for="textarea5">Textarea</label> 
-			<textarea id="textarea5" name="textarea5" class="required" required></textarea> 
-		</div> 
-		
-		<h2> date/time fields</h2> 
-		<div class="set"> 
-			<label for="datetime5">datetime field</label> 
-			<input type="datetime" name="datetime5" 
-				id="datetime5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="date5">date field</label> 
-			<input type="date" name="date5" 
-				id="date5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="month5">month field</label> 
-			<input type="month" name="month5" 
-				id="month5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="week5">week field</label> 
-			<input type="week" name="week5" 
-				id="week5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="time5">time field</label> 
-			<input type="time" name="time5" 
-				id="time5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="datetime-local5">datetime-local field</label> 
-			<input type="datetime-local" name="datetime-local5" 
-				id="datetime-local5" class="required" required /> 
-		</div> 
- 
-		<h2> misc fields</h2> 
-		<div class="set"> 
-			<label for="range5">range field</label> 
-			<input type="range" name="range5" 
-				id="range5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="color5">color field</label> 
-			<input type="color" name="color5" 
-				id="color5" class="required" required /> 
-		</div> 
- 
-		
-		<div class="set"> 
-			<label for="file5">file field</label> 
-			<input type="file" name="file5" 
-				id="file5" class="required" required /> 
-		</div> 
- 
-				
-		
-		<h2>option fields</h2> 
-		
-		<fieldset class="set"> 
-			<legend>Radio Buttons</legend> 
-			
-			<div> 
-				<label for="radio51">Option One</label> 
-				<input type="radio" name="radio5" id="radio51" value="radio51" class="required" required /> 
-			</div> 
- 
-			<div> 
-				<label for="radio52">Option Two</label> 
-				<input type="radio" name="radio5" id="radio52" value="radio52" class="required" required />	
-			</div> 
-		</fieldset> 
-		
-		<fieldset class="set"> 
-			<legend>Check Boxes</legend> 
-			
-			<div> 
-				<label for="checkbox51">Option One</label> 
-				<input type="checkbox" name="checkbox5" id="checkbox51" value="checkbox51" class="required" required /> 
-			</div> 
- 
-			<div> 
-				<label for="checkbox52">Option Two</label> 
-				<input type="checkbox" name="checkbox5" id="checkbox52" value="checkbox52" class="required" required />	
-			</div> 
-		</fieldset> 
-		
-		<div class="set"> 
-			<label for="select5">select</label> 
-			<select id="select5" name="select5" class="required" required> 
-				<option value="">--- Select Value ---</option> 
-				<option value="1">Value 1</option> 
-				<option value="2">Value 2</option> 
-				<option value="3">Value 3</option> 
-			</select> 
-		</div> 
-		
-		<h2>submits</h2> 
-		
-		<div class="set"> 
-			<input type="submit" value="submit" /> 
-			<input type="reset" value="reset" /> 
-			<button>Button tag</button> 
-			<input type="button" value="button type" /> 
-			
-			<a href="#" class="button">a.button</a> 
-		</div> 
-		
-		
-		
-		
-		
+		<form novalidate>
+
+
+		    <div class="set"><label for="it">Text input</label> <input class="required" id="it" type="text" value="text"></div>
+		    <div class="set"><label for="ie">Email input</label> <input class="required" id="ie" type="email" value="email"></div>
+		    <div class="set"><label for="is">Search input</label> <input class="required" id="is" type="search" value="search"></div>
+		    <div class="set"><label for="itel">Telephone input</label> <input class="required" type="tel" id="itel" value="+61 400 000 000"></div>
+		    <div class="set"><label for="iurl">URL input</label> <input class="required" type="url" id="iurl" value="http://example.com"></div>
+		    <div class="set"><label for="ipass">Password input</label> <input class="required" id="ipass" type="password" value="password"></div>
+
+		    <div class="set"><label for="ic">Color input</label> <input class="required" type="color" id="ic" value="#000000"></div>
+		    <div class="set"><label for="in">Number input</label> <input class="required" type="number" id="in" min="0" max="10" value="5"></div>
+		    <div class="set"><label for="ir">Range input</label> <input class="required" type="range" id="ir" value="10"></div>
+		    <div class="set"><label for="idd">Date input</label> <input class="required" type="date" id="idd" value="1970-01-01"></div>
+		    <div class="set"><label for="idm">Month input</label> <input class="required" type="month" id="idm" value="1970-01"></div>
+		    <div class="set"><label for="idw">Week input</label> <input class="required" type="week" id="idw" value="1970-W01"></div>
+		    <div class="set"><label for="idt">Datetime input</label> <input class="required" type="datetime" id="idt" value="1970-01-01T00:00:00Z"></div>
+		    <div class="set"><label for="idtl">Datetime-local input</label> <input class="required" type="datetime-local" id="idtl" value="1970-01-01T00:00"></div>
+
+
+		    <div class="set"><label for="ifile">File input</label> <input class="required" id="ifile" type="file"></div>
+
+
+		    <fieldset class="set">
+				<legend>Radio buttons</legend>
+				<div><label for="irs1">Option One</label> <input class="required" type="radio" name="radio" value="one" id="irs1"></div>
+				<div><label for="irs2">Option Two</label> <input class="required" type="radio" name="radio" value="two" id="irs2"></div>
+			</fieldset>
+
+		    <fieldset class="set">
+				<legend>Checkboxes</legend>
+				<div><label for="icbs1">Option One</label> <input class="required" type="checkbox" name="checkbox" value="one" id="icbs1"></div>
+				<div><label for="icbs2">Option Two</label> <input class="required" type="checkbox" name="checkbox" value="two" id="icbs2"></div>
+			</fieldset>
+
+
+
+
+		    <fieldset class="set">
+				<legend>Radio buttons</legend>
+				<div><input class="required" type="radio" name="radio2" value="one" id="irs1a"> <label for="irs1a">Option One</label></div>
+				<div><input class="required" type="radio" name="radio2" value="two" id="irs2a"> <label for="irs2a">Option Two</label></div>
+			</fieldset>
+
+		    <fieldset class="set">
+				<legend>Checkboxes</legend>
+				<div><input class="required" type="checkbox" name="checkbox2" value="one" id="icbs1a"> <label for="icbs1a">Option One</label></div>
+				<div><input class="required" type="checkbox" name="checkbox2" value="two" id="icbs2a"> <label for="icbs2a">Option Two</label></div>
+			</fieldset>
+
+
+
+
+
+		    <div class="set"><label for="s">Select field</label> <select class="required" id="s"><option>Option 01</option><option>Option 02</option></select></div>
+		    <div class="set"><label for="t">Textarea</label> <textarea class="required" id="t" cols="30" rows="5" >Textarea text</textarea></div>
+
+		    <div class="set"><input class="required" type="image" src="http://placekitten.com/90/24" alt="Image (input)"></div>
+
+		    <div class="set"><input class="required" type="reset" value="Reset (input)">
+		    <input class="required" type="button" value="Button (input)">
+		    <input class="required" type="submit" value="Submit (input)">
+
+		    <button type="reset">Reset (button)</button>
+		    <button type="button">Button (button)</button>
+		    <button type="submit">Submit (button)</button>
+
+		    <a href="#thi" id="thi" class="button btn">Link (a.button)</a></div>
+
 	
 	</form> 
 	
