@@ -7,4 +7,4 @@ Minimum page is brought to you by Peter Wilson and Josh Kinal at [Soupgiant](htt
 ## LESS Version
 A [LESS](http://lesscss.org/) version is in the process of being built, including a number of mixins for use once it is time to build your site. A base will continue to be available as a normal CSS file.
 
-You can see the progress on the less-version branch.
+You can see the progress on the [less-version](https://github.com/soupgiant/minimum-page/tree/less-version) branch.
