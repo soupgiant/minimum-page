@@ -1,4 +1,36 @@
 /*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
+@import "mixins.less";
+
+/* =============================================================================
+   Margin & border resets
+   ========================================================================== */
+
+/*
+ * body: Addresses margins handled incorrectly in IE6/7
+ * form: Corrects margin displayed oddly in IE6/7
+ * button,input,select,textare. Addresses margins set differently in IE6/7, FF3+, S5, Chrome
+ * figure: Addresses margin not present in IE6/7/8/9, S5, O11
+ */
+
+body,
+form,
+button,
+input,
+select,
+textarea {
+	/* referred to throughout as m0 */
+    margin: 0;
+}
+
+
+figure {
+	/* keep html5 elements seperate */
+    margin: 0;
+}
+
+
+
+
 
 /* =============================================================================
    HTML5 display definitions
@@ -70,13 +102,6 @@ html {
     -ms-text-size-adjust: 100%; /* 3 */
 }
 
-/*
- * Addresses margins handled incorrectly in IE6/7
- */
-
-body {
-    margin: 0;
-}
 
 /* 
  * Addresses font-family inconsistency between 'textarea' and other form elements.
@@ -279,29 +304,9 @@ svg:not(:root) {
 
 
 /* =============================================================================
-   Figures
-   ========================================================================== */
-
-/*
- * Addresses margin not present in IE6/7/8/9, S5, O11
- */
-
-figure {
-    margin: 0;
-}
-
-
-/* =============================================================================
    Forms
    ========================================================================== */
 
-/*
- * Corrects margin displayed oddly in IE6/7
- */
-
-form {
-    margin: 0;
-}
 
 /*
  * Define consistent border, margin, and padding
@@ -334,7 +339,7 @@ input,
 select,
 textarea {
     font-size: 100%; /* 1 */
-    margin: 0; /* 2 */
+    /* remove from m0 if you change margins */ /* 2 */
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */
 }
