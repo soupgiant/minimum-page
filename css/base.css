@@ -124,18 +124,36 @@ textarea {
    Links
    - a makes sense nested
    ========================================================================== */
-/*
- * Addresses outline displayed oddly in Chrome
- */
-a:focus {
-  outline: thin dotted;
+a {
+  color: #0066cc;
+  background: transparent;
+  text-decoration: underline;
 }
-/*
- * Improves readability when focused and also mouse hovered in all browsers
- * people.opera.com/patrickl/experiments/keyboard/test
- */
+a:visited {
+  color: #800080;
+}
+a:focus {
+  /*
+		 * Addresses outline displayed oddly in Chrome
+		 */
+
+  outline: thin dotted;
+  color: #ffffff;
+  /* assumes white content background */
+
+  background: #0066cc;
+  text-decoration: none;
+}
 a:hover, a:active {
+  /*
+		 * outline: Improves readability when focused and also mouse hovered in all browsers
+		 * people.opera.com/patrickl/experiments/keyboard/test
+		 */
+
   outline: 0;
+  color: #0066cc;
+  background: transparent;
+  text-decoration: none;
 }
 /* =============================================================================
    Typography

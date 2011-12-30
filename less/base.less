@@ -123,22 +123,41 @@ textarea {
    - a makes sense nested
    ========================================================================== */
 
-/*
- * Addresses outline displayed oddly in Chrome
- */
 
-a:focus {
-    outline: thin dotted;
-}
-
-/*
- * Improves readability when focused and also mouse hovered in all browsers
- * people.opera.com/patrickl/experiments/keyboard/test
- */
-
-a:hover,
-a:active {
-    outline: 0;
+a {
+	@unvisited: #06C;
+	@visited: #800080;
+	@contentBG: #fff;
+	& {
+		color: @unvisited;
+		background: transparent;
+		text-decoration: underline;
+	}
+	
+	&:visited {
+		color: @visited;
+	}
+	
+	&:focus {
+		/*
+		 * Addresses outline displayed oddly in Chrome
+		 */
+		outline: thin dotted;
+		color: @contentBG; /* assumes white content background */
+		background: @unvisited;
+		text-decoration: none;
+	}
+	
+	&:hover,&:active {
+		/*
+		 * outline: Improves readability when focused and also mouse hovered in all browsers
+		 * people.opera.com/patrickl/experiments/keyboard/test
+		 */
+		outline: 0;
+		color: @unvisited;
+		background: transparent;
+		text-decoration: none;
+	}
 }
 
 
