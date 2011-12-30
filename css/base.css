@@ -46,6 +46,7 @@ figure {
 }
 /* =============================================================================
    HTML5 display definitions
+   - delete this section to remove bloat if you won't be using HTML5 elements
    ========================================================================== */
 /*
  * Corrects block display not defined in IE6/7/8/9 & FF3
@@ -87,16 +88,18 @@ audio:not([controls]) {
    Base
    ========================================================================== */
 /*
- * 1. Corrects text resizing oddly in IE6/7 when body font-size is set using em units
+ * 1. font-size: Corrects text resizing oddly in IE6/7 when body font-size is set using em units
  *    http://clagnut.com/blog/348/#c790
  * 2. Keeps page centred in all browsers regardless of content height
  * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 html {
-  font-size: 100%;
+  /* font-size: 100%; /* 1 */
+
   /* 1 */
 
+  font: 75%/1.5;
   overflow-y: scroll;
   /* 2 */
 
@@ -119,6 +122,7 @@ textarea {
 }
 /* =============================================================================
    Links
+   - a makes sense nested
    ========================================================================== */
 /*
  * Addresses outline displayed oddly in Chrome
