@@ -27,3 +27,164 @@
 		*zoom: 1;
 	}
 }
+
+#rems {
+	.margin(@pixels1: 'null', @pixels2: 'null', @pixels3: 'null', @pixels4: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@i2: @pixels2;
+		@i3: @pixels3;
+		@i4: @pixels4;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem2: ~`(this.i2.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i2.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem3: ~`(this.i3.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i3.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem4: ~`(this.i4.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i4.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px2: ~`(this.i2.toJS() == "'null'")?'':parseFloat(this.i2.toJS()) + 'px'`;
+		@px3: ~`(this.i3.toJS() == "'null'")?'':parseFloat(this.i3.toJS()) + 'px'`;
+		@px4: ~`(this.i4.toJS() == "'null'")?'':parseFloat(this.i4.toJS()) + 'px'`;
+		//output mixin
+		margin: @px1 @px2 @px3 @px4;
+		margin: @rem1 @rem2 @rem3 @rem4;
+	}
+
+	.margin-top(@pixels1: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		//output mixin
+		margin-top: @px1;
+		margin-top: @rem1;
+	}
+
+	.margin-right(@pixels1: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		//output mixin
+		margin-right: @px1;
+		margin-right: @rem1;
+	}
+
+	.margin-bottom(@pixels1: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		//output mixin
+		margin-bottom: @px1;
+		margin-bottom: @rem1;
+	}
+
+	.margin-left(@pixels1: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		//output mixin
+		margin-left: @px1;
+		margin-left: @rem1;
+	}
+	
+	.padding(@pixels1: 'null', @pixels2: 'null', @pixels3: 'null', @pixels4: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@i2: @pixels2;
+		@i3: @pixels3;
+		@i4: @pixels4;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem2: ~`(this.i2.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i2.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem3: ~`(this.i3.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i3.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem4: ~`(this.i4.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i4.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px2: ~`(this.i2.toJS() == "'null'")?'':parseFloat(this.i2.toJS()) + 'px'`;
+		@px3: ~`(this.i3.toJS() == "'null'")?'':parseFloat(this.i3.toJS()) + 'px'`;
+		@px4: ~`(this.i4.toJS() == "'null'")?'':parseFloat(this.i4.toJS()) + 'px'`;
+		//output mixin
+		padding: @px1 @px2 @px3 @px4;
+		padding: @rem1 @rem2 @rem3 @rem4;
+	}
+
+	.padding-top(@pixels1: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		//output mixin
+		padding-top: @px1;
+		padding-top: @rem1;
+	}
+
+	.padding-right(@pixels1: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		//output mixin
+		padding-right: @px1;
+		padding-right: @rem1;
+	}
+
+	.padding-bottom(@pixels1: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		//output mixin
+		padding-bottom: @px1;
+		padding-bottom: @rem1;
+	}
+
+	.padding-left(@pixels1: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@bf: @baseFontSize;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		//output mixin
+		padding-left: @px1;
+		padding-left: @rem1;
+	}
+		
+	.font-size(@pixels1: 'null') {
+		//ugly, can't access outside scope	
+		@i1: @pixels1;
+		@bf: @baseFontSize;
+
+		@rem1: ~`(this.i1.toJS() == "'null'")?'1rem':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?parseFloat(this.bf.toJS()) + 'px':parseFloat(this.i1.toJS()) + 'px'`;
+		font-size: @px1;
+		font-size: @rem1;
+	}
+}
