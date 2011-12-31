@@ -44,6 +44,7 @@ figure {
 
   margin: 0;
 }
+/* note: m101rem is in headings section */
 /* =============================================================================
    HTML5 display definitions
    - delete this section to remove bloat if you won't be using HTML5 elements
@@ -159,10 +160,37 @@ a:hover, a:active {
    Typography
    ========================================================================== */
 /*
- * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ * h1: Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* referred to throughout as m101rem */
+
+  margin: 1em 0 12px;
+  margin: 1em 0 1rem;
+  page-break-after: avoid;
+}
 h1 {
-  font-size: 2em;
+  font-size: 166.67%;
+}
+h2 {
+  font-size: 150%;
+}
+h3 {
+  font-size: 133.33%;
+}
+h4 {
+  font-size: 116.67%;
+}
+h5 {
+  font-size: 108.33%;
+}
+h6 {
+  font-size: 100%;
 }
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome

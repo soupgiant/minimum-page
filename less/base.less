@@ -1,5 +1,5 @@
 /*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
-@baseFontSize: 12px;
+@baseFontSize: 12;
 @import "mixins.less";
 
 /* =============================================================================
@@ -29,8 +29,7 @@ figure {
     margin: 0;
 }
 
-
-
+/* note: m101rem is in headings section */
 
 
 /* =============================================================================
@@ -166,12 +165,37 @@ a {
    ========================================================================== */
 
 /*
- * Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
+ * h1: Neutralise smaller font-size in 'section' and 'article' in FF4+, Chrome, S5
  */
 
-h1 {
-    font-size: 2em;
+
+h1,h2,h3,h4,h5,h6 {
+	/* referred to throughout as m101rem */
+	margin: 1em 0 @baseFontSize*1px;
+	margin: 1em 0 1rem;
+	page-break-after : avoid;
 }
+
+
+h1 {
+	font-size: round(20/@baseFontSize*100*100)/100%;
+}
+h2 {
+	font-size: round(18/@baseFontSize*100*100)/100%;
+}
+h3 {
+	font-size: round(16/@baseFontSize*100*100)/100%;
+}
+h4 {
+	font-size: round(14/@baseFontSize*100*100)/100%;
+}
+h5 {
+	font-size: round(13/@baseFontSize*100*100)/100%;
+}
+h6 {
+	font-size: round(12/@baseFontSize*100*100)/100%;
+}	
+
 
 /*
  * Addresses styling not present in IE7/8/9, S5, Chrome
