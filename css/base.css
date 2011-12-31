@@ -91,24 +91,26 @@ audio:not([controls]) {
 /*
  * 1. font-size: Corrects text resizing oddly in IE6/7 when body font-size is set using em units
  *    http://clagnut.com/blog/348/#c790
- * 2. Keeps page centred in all browsers regardless of content height
- * 3. Prevents iOS text size adjust after orientation change, without disabling user zoom
+ * 2. using font tag for size & line height. More compact than seperate font-size and line-height
+ *    rules. Without fake font-family the rule is ignored. (family set on body)
+ * 3. Keeps page centred in all browsers regardless of content height
+ * 4. Prevents iOS text size adjust after orientation change, without disabling user zoom
  *    www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/
  */
 html {
-  /* font-size: 100%; /* 1 */
-
   /* 1 */
 
-  font: 75%/1.5 sans-serif;
-  overflow-y: scroll;
+  font: 75%/1.5 fake;
   /* 2 */
 
-  -webkit-text-size-adjust: 100%;
+  overflow-y: scroll;
   /* 3 */
 
+  -webkit-text-size-adjust: 100%;
+  /* 4 */
+
   -ms-text-size-adjust: 100%;
-  /* 3 */
+  /* 4 */
 
 }
 /* 
