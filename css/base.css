@@ -39,10 +39,22 @@ textarea {
 
   margin: 0;
 }
-figure {
-  /* keep html5 elements seperate */
+figure,
+hgroup > h1,
+hgroup > h2,
+hgroup > h3,
+hgroup > h4,
+hgroup > h5,
+hgroup > h6 {
+  /* keep html5 elements seperate
+       remove > if IE6 support required */
 
   margin: 0;
+}
+hgroup {
+  /* referred to throughout as m1 */
+
+  margin: 1em 0;
 }
 /* note: m101rem is applied to headings */
 /* =============================================================================
