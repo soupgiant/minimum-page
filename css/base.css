@@ -1,5 +1,4 @@
 /*! normalize.css 2011-11-04T15:38 UTC - http://github.com/necolas/normalize.css */
-/*! minimum page mixins, do not compile this file */
 /* ********************************************************
 
 ######## ########  #### ########        ##       ########  ######   ######  
@@ -20,6 +19,7 @@
 
 
 ******************************************************** */
+/* Minimum Page mixins. Do not compile this file */
 /* =============================================================================
    Margin & border resets
    ========================================================================== */
@@ -220,9 +220,9 @@ blockquote {
   margin: 1em 40px;
 }
 /*
- * Addresses styling not present in S5, Chrome
+ * dfn: Addresses styling not present in S5, Chrome
  */
-dfn {
+dfn, caption {
   font-style: italic;
 }
 /*
@@ -453,3 +453,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+th, td {
+  border: 1px solid #aaa;
+}
+tbody th {
+  text-align: left;
+}
+/* caption: italic (see dfn rule) */
