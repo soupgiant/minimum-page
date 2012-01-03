@@ -455,6 +455,7 @@ table {
 }
 th, td {
   border: 1px solid #aaa;
+  padding: .5em;
 }
 tbody th {
   text-align: left;
