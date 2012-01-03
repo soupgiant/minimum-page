@@ -460,4 +460,8 @@ th, td {
 tbody th {
   text-align: left;
 }
-/* caption: italic (see dfn rule) */
+caption {
+  /* font-style: italic; /* (see dfn rule) */
+
+  margin-bottom: .5em;
+}
