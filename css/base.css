@@ -292,7 +292,7 @@ ul, ol {
   padding: 0 0 0 40px;
 }
 dd {
-  margin: 0 0 0 40px;
+  margin-left: 40px;
 }
 nav ul, nav ol {
   margin: 0;
