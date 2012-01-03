@@ -110,7 +110,7 @@ audio:not([controls]) {
 html {
   /* 1 */
 
-  font-size: 75%;
+  font-size: 81.25%;
   /* 1 */
 
   overflow-y: scroll;
@@ -182,24 +182,24 @@ h5,
 h6 {
   /* referred to throughout as m101rem */
 
-  margin: 1em 0 12px;
+  margin: 1em 0 13px;
   margin: 1em 0 1rem;
   page-break-after: avoid;
 }
 h1 {
-  font-size: 166.67%;
+  font-size: 161.54%;
 }
 h2 {
-  font-size: 150%;
+  font-size: 146.15%;
 }
 h3 {
-  font-size: 133.33%;
+  font-size: 130.77%;
 }
 h4 {
-  font-size: 116.67%;
+  font-size: 115.38%;
 }
 h5 {
-  font-size: 108.33%;
+  font-size: 107.69%;
 }
 h6 {
   font-size: 100%;
