@@ -1,4 +1,3 @@
-/*! minimum page mixins, do not compile this file */
 /* ********************************************************
 
 ######## ########  #### ########        ##       ########  ######   ######  
@@ -20,6 +19,8 @@
 
 ******************************************************** */
 
+/* Minimum Page mixins. Do not compile this file */
+
 #fixes {
 	.inline-block() {
 		display:inline-block;
@@ -37,18 +38,26 @@
 		@i4: @pixels4;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
-		@rem2: ~`(this.i2.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i2.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
-		@rem3: ~`(this.i3.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i3.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
-		@rem4: ~`(this.i4.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i4.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
+		@rem2: ~`(this.i2.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i2.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem2a: ~`(this.rem2.toJS() != 0)?this.rem2.toJS() + 'rem':this.rem2.toJS()`;
+		@rem3: ~`(this.i3.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i3.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem3a: ~`(this.rem3.toJS() != 0)?this.rem3.toJS() + 'rem':this.rem3.toJS()`;
+		@rem4: ~`(this.i4.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i4.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem4a: ~`(this.rem4.toJS() != 0)?this.rem4.toJS() + 'rem':this.rem4.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
-		@px2: ~`(this.i2.toJS() == "'null'")?'':parseFloat(this.i2.toJS()) + 'px'`;
-		@px3: ~`(this.i3.toJS() == "'null'")?'':parseFloat(this.i3.toJS()) + 'px'`;
-		@px4: ~`(this.i4.toJS() == "'null'")?'':parseFloat(this.i4.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
+		@px2: ~`(this.i2.toJS() == "'null'")?'':parseFloat(this.i2.toJS())`;
+		@px2a: ~`(this.px2.toJS() != 0)?this.px2.toJS() + 'px':this.px2.toJS()`;
+		@px3: ~`(this.i3.toJS() == "'null'")?'':parseFloat(this.i3.toJS())`;
+		@px3a: ~`(this.px3.toJS() != 0)?this.px3.toJS() + 'px':this.px3.toJS()`;
+		@px4: ~`(this.i4.toJS() == "'null'")?'':parseFloat(this.i4.toJS())`;
+		@px4a: ~`(this.px4.toJS() != 0)?this.px4.toJS() + 'px':this.px4.toJS()`;
 		//output mixin
-		margin: @px1 @px2 @px3 @px4;
-		margin: @rem1 @rem2 @rem3 @rem4;
+		margin: @px1a @px2a @px3a @px4a;
+		margin: @rem1a @rem2a @rem3a @rem4a;
 	}
 
 	.margin-top(@pixels1: 'null') {
@@ -56,12 +65,14 @@
 		@i1: @pixels1;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
 		//output mixin
-		margin-top: @px1;
-		margin-top: @rem1;
+		margin-top: @px1a;
+		margin-top: @rem1a;
 	}
 
 	.margin-right(@pixels1: 'null') {
@@ -69,12 +80,15 @@
 		@i1: @pixels1;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
 		//output mixin
-		margin-right: @px1;
-		margin-right: @rem1;
+		margin-right: @px1a;
+		margin-right: @rem1a;
 	}
 
 	.margin-bottom(@pixels1: 'null') {
@@ -82,12 +96,14 @@
 		@i1: @pixels1;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
 		//output mixin
-		margin-bottom: @px1;
-		margin-bottom: @rem1;
+		margin-bottom: @px1a;
+		margin-bottom: @rem1a;
 	}
 
 	.margin-left(@pixels1: 'null') {
@@ -95,12 +111,14 @@
 		@i1: @pixels1;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
 		//output mixin
-		margin-left: @px1;
-		margin-left: @rem1;
+		margin-left: @px1a;
+		margin-left: @rem1a;
 	}
 	
 	.padding(@pixels1: 'null', @pixels2: 'null', @pixels3: 'null', @pixels4: 'null') {
@@ -111,18 +129,26 @@
 		@i4: @pixels4;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
-		@rem2: ~`(this.i2.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i2.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
-		@rem3: ~`(this.i3.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i3.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
-		@rem4: ~`(this.i4.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i4.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
+		@rem2: ~`(this.i2.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i2.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem2a: ~`(this.rem2.toJS() != 0)?this.rem2.toJS() + 'rem':this.rem2.toJS()`;
+		@rem3: ~`(this.i3.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i3.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem3a: ~`(this.rem3.toJS() != 0)?this.rem3.toJS() + 'rem':this.rem3.toJS()`;
+		@rem4: ~`(this.i4.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i4.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem4a: ~`(this.rem4.toJS() != 0)?this.rem4.toJS() + 'rem':this.rem4.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
-		@px2: ~`(this.i2.toJS() == "'null'")?'':parseFloat(this.i2.toJS()) + 'px'`;
-		@px3: ~`(this.i3.toJS() == "'null'")?'':parseFloat(this.i3.toJS()) + 'px'`;
-		@px4: ~`(this.i4.toJS() == "'null'")?'':parseFloat(this.i4.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
+		@px2: ~`(this.i2.toJS() == "'null'")?'':parseFloat(this.i2.toJS())`;
+		@px2a: ~`(this.px2.toJS() != 0)?this.px2.toJS() + 'px':this.px2.toJS()`;
+		@px3: ~`(this.i3.toJS() == "'null'")?'':parseFloat(this.i3.toJS())`;
+		@px3a: ~`(this.px3.toJS() != 0)?this.px3.toJS() + 'px':this.px3.toJS()`;
+		@px4: ~`(this.i4.toJS() == "'null'")?'':parseFloat(this.i4.toJS())`;
+		@px4a: ~`(this.px4.toJS() != 0)?this.px4.toJS() + 'px':this.px4.toJS()`;
 		//output mixin
-		padding: @px1 @px2 @px3 @px4;
-		padding: @rem1 @rem2 @rem3 @rem4;
+		padding: @px1a @px2a @px3a @px4a;
+		padding: @rem1a @rem2a @rem3a @rem4a;
 	}
 
 	.padding-top(@pixels1: 'null') {
@@ -130,12 +156,14 @@
 		@i1: @pixels1;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
 		//output mixin
-		padding-top: @px1;
-		padding-top: @rem1;
+		padding-top: @px1a;
+		padding-top: @rem1a;
 	}
 
 	.padding-right(@pixels1: 'null') {
@@ -143,12 +171,15 @@
 		@i1: @pixels1;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
 		//output mixin
-		padding-right: @px1;
-		padding-right: @rem1;
+		padding-right: @px1a;
+		padding-right: @rem1a;
 	}
 
 	.padding-bottom(@pixels1: 'null') {
@@ -156,12 +187,14 @@
 		@i1: @pixels1;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
 		//output mixin
-		padding-bottom: @px1;
-		padding-bottom: @rem1;
+		padding-bottom: @px1a;
+		padding-bottom: @rem1a;
 	}
 
 	.padding-left(@pixels1: 'null') {
@@ -169,22 +202,28 @@
 		@i1: @pixels1;
 		@bf: @baseFontSize;
 		//calculate rem values
-		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
 		//calculate pixels values
-		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS()) + 'px'`;
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
 		//output mixin
-		padding-left: @px1;
-		padding-left: @rem1;
+		padding-left: @px1a;
+		padding-left: @rem1a;
 	}
 		
 	.font-size(@pixels1: 'null') {
 		//ugly, can't access outside scope	
 		@i1: @pixels1;
 		@bf: @baseFontSize;
-
-		@rem1: ~`(this.i1.toJS() == "'null'")?'1rem':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000 + 'rem'`;
-		@px1: ~`(this.i1.toJS() == "'null'")?parseFloat(this.bf.toJS()) + 'px':parseFloat(this.i1.toJS()) + 'px'`;
-		font-size: @px1;
-		font-size: @rem1;
+		//calculate rem values
+		@rem1: ~`(this.i1.toJS() == "'null'")?'':Math.round(10000*parseFloat(this.i1.toJS())/parseFloat(this.bf.toJS()))/10000`;
+		@rem1a: ~`(this.rem1.toJS() != 0)?this.rem1.toJS() + 'rem':this.rem1.toJS()`;
+		//calculate pixels values
+		@px1: ~`(this.i1.toJS() == "'null'")?'':parseFloat(this.i1.toJS())`;
+		@px1a: ~`(this.px1.toJS() != 0)?this.px1.toJS() + 'px':this.px1.toJS()`;
+		//output mixin
+		font-size: @px1a;
+		font-size: @rem1a;
 	}
 }
